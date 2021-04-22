@@ -408,7 +408,7 @@ endif()
 
 #---Removed options------------------------------------------------------------
 foreach(opt afdsmgrd afs bonjour castor chirp geocad glite globus hdfs ios
-            krb5 ldap qt qtgsi rfio ruby sapdb srp table python)
+            krb5 ldap qt qtgsi rfio ruby sapdb srp python)
   if(${opt})
     message(FATAL_ERROR ">>> Option '${opt}' is no longer supported in ROOT ${ROOT_VERSION}.")
   endif()

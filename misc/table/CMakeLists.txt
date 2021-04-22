@@ -1,0 +1,77 @@
+############################################################################
+# CMakeLists.txt file for building ROOT misc/table package
+# @author Pere Mato, CERN
+############################################################################
+
+#ROOT_STANDARD_LIBRARY_PACKAGE(Table DEPENDENCIES Core Tree Gpad Graf3d Graf Hist RIO MathCore)
+ROOT_STANDARD_LIBRARY_PACKAGE(Table
+  HEADERS
+     tableDescriptor.h
+     TCernLib.h
+     TChair.h
+     TColumnView.h	    
+     TDataSet.h	    
+     TDataSetIter.h	    
+     TDsKey.h	    
+     TFileIter.h	    
+     TFileSet.h	    
+     TGenericTable.h	    
+     TIndexTable.h	    
+     TObjectSet.h	    
+     TPoints3D.h	    
+     TPointsArray3D.h    
+     TPolyLineShape.h    
+     TResponseTable.h    
+     TTable3Points.h	    
+     TTableDescriptor.h  
+     TTable.h	    
+     TTableIter.h	    
+     TTableMap.h	    
+     TTablePadView3D.h   
+     TTablePoints.h	    
+     TTableSorter.h	    
+     Ttypes.h	    
+     TVolume.h	    
+     TVolumePosition.h   
+     TVolumeView.h	    
+     TVolumeViewIter.h   
+  SOURCES
+     src/TCernLib.cxx	
+     src/TChair.cxx		
+     src/TColumnView.cxx	
+     src/TDataSet.cxx	
+     src/TDataSetIter.cxx	
+     src/TDsKey.cxx		
+     src/TFileIter.cxx	
+     src/TFileSet.cxx	
+     src/TGenericTable.cxx	
+     src/TIndexTable.cxx	
+     src/TObjectSet.cxx	
+     src/TPoints3D.cxx	
+     src/TPointsArray3D.cxx	
+     src/TPolyLineShape.cxx	
+     src/TResponseTable.cxx	
+     src/TTable3Points.cxx	
+     src/TTable.cxx		
+     src/TTableDescriptor.cxx
+     src/TTableIter.cxx	
+     src/TTableMap.cxx	
+     src/TTablePadView3D.cxx	
+     src/TTablePoints.cxx	
+     src/TTableSorter.cxx	
+     src/TVolume.cxx		
+     src/TVolumePosition.cxx	
+     src/TVolumeView.cxx	
+     src/TVolumeViewIter.cxx 
+  DEPENDENCIES
+    Core
+    Tree
+    Gpad
+    Graf3d
+    Graf
+    Hist
+    RIO
+    MathCore
+)
+
+ROOT_ADD_TEST_SUBDIRECTORY(test)
